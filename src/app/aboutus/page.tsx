@@ -79,7 +79,7 @@ export default function AboutUs() {
                     <div className='w-[80%] mx-auto text-center z-50'>
                         <Title title='“' style='' />
 
-                        <p className='text-secondary italic font-dmSerif font-thin lg:text-[26px] text-xl'>I like an interior that defies labeling. I don't really want someone to walk into a room and know that I did it</p>
+                        <p className='text-secondary italic font-dmSerif font-thin lg:text-[26px] text-xl'>I like an interior that defies labeling. I don&apos;t really want someone to walk into a room and know that I did it</p>
                         <p className='paragraph mt-4'>-BUNNY WILLIAMS</p>
                     </div>
                 </div>
