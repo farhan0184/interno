@@ -1,8 +1,12 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { DM_Serif_Display, Jost } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/shares/Navbar";
+import Footer from "@/components/shares/Footer";
 
-const inter = Inter({ subsets: ["latin"] });
+
+const dmSerifDisplay = DM_Serif_Display({ weight: "400", subsets: ["latin"],variable: '--font-dm-serif', });
+const jost = Jost({ weight: "400", subsets: ["latin"], variable: '--font-jost', });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +20,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${dmSerifDisplay.variable} ${jost.variable} relative`}>
+
+        <div className="w-[1px] h-full bg-gray-300 absolute left-[20%] -z-10"></div>
+        <div className="w-[1px] h-full bg-gray-300 absolute left-[40%] -z-10"></div>
+        <div className="w-[1px] h-full bg-gray-300 absolute left-[60%] -z-10"></div>
+        <div className="w-[1px] h-full bg-gray-300 absolute right-[20%] -z-10"></div>
+        <Navbar/>
+        {children}
+        <Footer/>
+      </body>
     </html>
   );
 }

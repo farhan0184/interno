@@ -2,32 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.centerY {
+    @apply flex items-center
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.centerAll {
+    @apply flex justify-center items-center
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.width {
+    @apply lg:w-[60%] md:w-[80%] w-[90%] mx-auto
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.header {
+    @apply font-dmSerif font-bold text-secondary
+}
+
+.paragraph {
+    @apply font-jost text-tertiary
+}
+
+.svg {
+    fill: #292F36;
+    transition: fill 0.3s ease;
+}
+
+.svg:hover {
+    fill: #F2994A;
+}
+
+.input{
+    @apply w-full border-b-[1px]  border-gray-400 outline-none py-3 placeholder:text-gray-500 bg-transparent
 }
