@@ -1,4 +1,6 @@
+'use client'
 import Image, { StaticImageData } from 'next/image'
+import { useRouter } from 'next/navigation'
 import React from 'react'
 import { HiChevronRight } from 'react-icons/hi2'
 
@@ -16,9 +18,10 @@ interface ArticleProps {
     id: number
 }
 export default function Article({ item, idx, setId, id }: ArticleProps) {
+    const {push} = useRouter()
     return (
 
-        <div key={idx} className='border-[1px] sm:w-full w-[70%]  2xl:h-[400px] lg:h-[330px] h-[400px]   border-gray-300 rounded-[15%] p-4 bg-white hover:bg-quaternary relative' onMouseOver={() => setId(idx)} onMouseOut={() => setId(-1)}>
+        <div key={idx} className='border-[1px] sm:w-full w-[70%]  2xl:h-[400px] lg:h-[330px] h-[400px]   border-gray-300 rounded-[15%] p-4 bg-white hover:bg-quaternary relative cursor-pointer' onMouseOver={() => setId(idx)} onMouseOut={() => setId(-1)} onClick={() => push(`/blogs/${idx}`)}>
             <div className='relative'>
                 <Image src={item.img} alt="image" className='rounded-t-[15%] w-full ' />
                 <div className='absolute bg-white  bottom-1 left-1 px-3'>

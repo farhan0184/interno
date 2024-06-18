@@ -40,7 +40,7 @@ export default function Home() {
       <Counter />
 
       <Container isPadding={false} >
-        <Articles />
+        <Articles isHome={true}/>
         <Join />
       </Container>
     </div>

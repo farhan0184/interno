@@ -12,6 +12,10 @@ import image5 from './image5.png'
 import image6 from './image6.png'
 import image7 from './image7.png'
 import image8 from './image8.png'
+import image9 from './image9.png'
+import image10 from './image10.png'
+import image11 from './image11.png'
+
 import person1 from './person1.jpg'
 import person2 from './person2.jpg'
 import person3 from './person3.jpg'
@@ -37,8 +41,20 @@ import Icon4 from './Icon4.png'
 import Video from './video.jpg'
 import VideoIcon from './videoIcon.png'
 import LoveDesign from './lovedesign.jpg'
+import Bedroom1 from './bedroom1.png'
+import Bedroom2 from './bedroom2.png'
+import Bedroom3 from './bedroom3.png'
+import Bedroom4 from './bedroom4.png'
+import Bedroom5 from './bedroom5.png'
+import Bedroom6 from './bedroom6.png'
+import Bedroom7 from './bedroom7.png'
+import SingleProjectImg from './singleProjectsearch.png'
+import LatestBlog from './latest-blog.png'
+import SingleBlogImg1 from './singleblogimg1.png'
+import SingleBlogImg2 from './singleblogimg2.png'
+import SingleTeamImg from './singleTeamImg.png'
 
 
 
-export {LogoIcon, Company1, Company2, Company3, Company4, Company5, image1, image2, image3,image4,image5,image6,image7,image8,person1,person2,person3, BannerImg, WhatWeDo, EndResult, SayAbout1, SayAbout2, SayAbout3, SayAbout4, SayAbout5, SayAbout6, SayAbout7, SayAbout8, Work1, Work2, Work3, Work4, Icon1, Icon2, Icon3, Icon4, Video, VideoIcon, LoveDesign}
+export {LogoIcon, Company1, Company2, Company3, Company4, Company5, image1, image2, image3,image4,image5,image6,image7,image8,person1,person2,person3, BannerImg, WhatWeDo, EndResult, SayAbout1, SayAbout2, SayAbout3, SayAbout4, SayAbout5, SayAbout6, SayAbout7, SayAbout8, Work1, Work2, Work3, Work4, Icon1, Icon2, Icon3, Icon4, Video, VideoIcon, LoveDesign, Bedroom1, Bedroom2, Bedroom3, Bedroom4, Bedroom5, Bedroom6, Bedroom7, SingleProjectImg, image9, image10, image11, LatestBlog, SingleBlogImg1, SingleBlogImg2, SingleTeamImg}
 

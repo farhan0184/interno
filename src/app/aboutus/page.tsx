@@ -1,71 +1,21 @@
 'use client'
-import { EndResult, WhatWeDo, SayAbout1, SayAbout2, SayAbout3, SayAbout4 } from '@/assets/images'
+import { EndResult, WhatWeDo } from '@/assets/images'
+import ContactUs from '@/components/aboutUs/ContactUs'
 import ImgDetail from '@/components/aboutUs/ImgDetail'
+import SayAbout from '@/components/aboutUs/SayAbout'
+import SayAbouts from '@/components/aboutUs/SayAbouts'
 import AllHeader from '@/components/shares/AllHeader'
 import Button from '@/components/shares/Button'
 import Container from '@/components/shares/Container'
 import Input from '@/components/shares/Input'
 import Title from '@/components/shares/Title'
-import Facebook from '@/components/svg/Facebook'
-import Instagram from '@/components/svg/Instagram'
-import Linkedin from '@/components/svg/Linkedin'
-import Twitter from '@/components/svg/Twitter'
-import Image from 'next/image'
-import Link from 'next/link'
 import React from 'react'
 
 
-const data = [
-    {
-        img: SayAbout1,
-        name: 'Nattasha Julie',
-        profession: 'Design, Australia',
-        facebook: '#',
-        twitter: '#',
-        linkedin: '#',
-        instagram: '#',
-        phone: '+123 456 789',
-        email: 'nH4pY@example.com',
-    },
-    {
-        img: SayAbout2,
-        name: 'Nattasha Julie',
-        profession: 'Design, Australia',
-        facebook: '#',
-        twitter: '#',
-        linkedin: '#',
-        instagram: '#',
-        phone: '+123 456 789',
-        email: 'nH4pY@example.com',
-    },
-    {
-        img: SayAbout3,
-        name: 'Nattasha Julie',
-        profession: 'Design, Australia',
-        facebook: '#',
-        twitter: '#',
-        linkedin: '#',
-        instagram: '#',
-        phone: '+123 456 789',
-        email: 'nH4pY@example.com',
-    },
-    {
-        img: SayAbout4,
-        name: 'Nattasha Julie',
-        profession: 'Design, Australia',
-        facebook: '#',
-        twitter: '#',
-        linkedin: '#',
-        instagram: '#',
-        phone: '+123 456 789',
-        email: 'nH4pY@example.com',
-    },
-]
 
 
 
 export default function AboutUs() {
-    const [id, setId] = React.useState(-1)
     const img = '/about.png'
     return (
         <div>
@@ -95,54 +45,13 @@ export default function AboutUs() {
                 <Container isPadding={false}>
                     <Title title='What the People Thinks About Us' style='md:w-[50%] mx-auto text-center ' />
 
-                    <div className='grid sm:grid-cols-4 grid-cols-2 gap-5 mt-5 '>
-                        {
-                            data.map((item, idx) => (
-                                <div key={idx} className='w-full rounded-xl relative' onMouseOver={() => setId(idx)} onMouseOut={() => setId(-1)}>
-                                    <Image src={item.img} alt="image" className='rounded-xl w-full' />
-                                    {
-                                        id === idx && <div className='w-full h-full absolute top-0 left-0 bg-white rounded-xl cursor-pointer text-center py-10 space-y-16'>
-                                            <div>
-                                                <h1 className='text-[18px] font-dmSerif font-bold text-secondary'>{item.name}</h1>
-                                                <p className='text-[14px] font-jost text-tertiary'>{item.profession}</p>
-                                            </div>
-                                            <div className='centerY justify-center gap-5'>
-                                                <Link href="#"><Facebook /></Link>
-                                                <Link href="#"><Twitter /></Link>
-                                                <Link href="#"><Linkedin /></Link>
-                                                <Link href="#"><Instagram /></Link>
-                                            </div>
-                                            <div>
-                                                <p className='text-[14px] font-jost text-tertiary'>{item.phone}</p>
-                                                <p className='text-[14px] font-jost text-tertiary'>{item.email}</p>
-                                            </div>
-                                        </div>
-                                    }
-                                </div>
-                            ))
-                        }
-                    </div>
-
+                    <SayAbouts />
                 </Container>
             </div>
 
             {/*  productive talk  */}
-            <Container isPadding={false} style=''>
-                <Title title='Creative project? Let&apos;s havea productive talk.' style='md:w-[70%] mx-auto text-center' />
-                <div className='md:w-[80%] mx-auto  mt-10'>
-                    <div className='flex gap-5 mb-8'>
-                        <Input placeholder='Name' />
-                        <Input placeholder='Email' />
-                    </div>
-                    <div>
-                       <Input placeholder='Hello Iam Intrested in..' isTextArea={true} />
-                    </div>
+            <ContactUs title='Creative project? Let&apos;s havea productive talk.' isCheckBox={false} />
 
-                    <div className='mt-10 flex justify-center'>
-                    <Button url='#' title='Send Now' isStyle={false} />
-                    </div>
-                </div>
-            </Container>
         </div>
     )
 }

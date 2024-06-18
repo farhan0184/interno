@@ -8,7 +8,8 @@ import Twitter from '../svg/Twitter'
 import Linkedin from '../svg/Linkedin'
 import Instagram from '../svg/Instagram'
 import Link from 'next/link'
-const icons = [
+import SocialMedia from './SocialMedia'
+export const icons = [
     {
         icon: <Facebook />,
         link: 'https://www.facebook.com/'
@@ -102,11 +103,7 @@ export default function Footer() {
                     <Logo />
                     <Discription disc='It is a long established fact that a reader will be distracted lookings.' style='py-5 ' />
                     <div className='centerY gap-5 '>
-                        {icons.map((item, idx) => (
-                            <Link href={item.link} key={idx} target="_blank" rel="noopener noreferrer">
-                                {item.icon}
-                            </Link>
-                        ))}
+                        <SocialMedia icons={icons} />
                     </div>
                 </div>
                 <div className='md:w-[68%] flex  md:pl-10 md:mt-0 mt-10'>
