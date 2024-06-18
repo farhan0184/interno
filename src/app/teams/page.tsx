@@ -9,7 +9,7 @@ import SingleTeam from '@/components/teams/SingleTeam'
 import React from 'react'
 
 
-export const teams = [
+export const teamsData = [
     {
         id: 1,
         name: 'Charlotte Levi',
@@ -159,7 +159,7 @@ export default function Teams() {
             <Container isPadding={false} style='grid grid-cols- md:grid-cols-3 lg:grid-cols-4 gap-10 mt-20'>
 
                 {
-                    teams.map((team) => {
+                    teamsData.map((team) => {
                         const name = team.name.replace(' ', '')
                         .toLocaleLowerCase()
                         return (
