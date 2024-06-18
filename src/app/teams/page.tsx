@@ -9,7 +9,7 @@ import SingleTeam from '@/components/teams/SingleTeam'
 import React from 'react'
 
 
-export const teamsData = [
+const teamsData = [
     {
         id: 1,
         name: 'Charlotte Levi',
