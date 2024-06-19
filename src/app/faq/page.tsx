@@ -20,7 +20,7 @@ export default function FAQ() {
                 <div className={`md:w-[50%] ${item.style} flex flex-col justify-center`}>
                   <div>
                     {item.questions.map(question => (
-                      <Accordion title={question.question} content={question.answer} />
+                      <Accordion key={question.id} title={question.question} content={question.answer} />
                     ))}
                   </div>
                 </div>
