@@ -56,8 +56,9 @@ import SingleTeamImg from './singleTeamImg.png'
 import Location from './contact.png'
 import FAQImg1 from  './faq1.jpg'
 import FAQImg2 from  './faq2.jpg'
+import ErrorImg from  './404.jpg'
 
 
 
-export {LogoIcon, Company1, Company2, Company3, Company4, Company5, image1, image2, image3,image4,image5,image6,image7,image8,person1,person2,person3, BannerImg, WhatWeDo, EndResult, SayAbout1, SayAbout2, SayAbout3, SayAbout4, SayAbout5, SayAbout6, SayAbout7, SayAbout8, Work1, Work2, Work3, Work4, Icon1, Icon2, Icon3, Icon4, Video, VideoIcon, LoveDesign, Bedroom1, Bedroom2, Bedroom3, Bedroom4, Bedroom5, Bedroom6, Bedroom7, SingleProjectImg, image9, image10, image11, LatestBlog, SingleBlogImg1, SingleBlogImg2, SingleTeamImg, Location, FAQImg1, FAQImg2}
+export {LogoIcon, Company1, Company2, Company3, Company4, Company5, image1, image2, image3,image4,image5,image6,image7,image8,person1,person2,person3, BannerImg, WhatWeDo, EndResult, SayAbout1, SayAbout2, SayAbout3, SayAbout4, SayAbout5, SayAbout6, SayAbout7, SayAbout8, Work1, Work2, Work3, Work4, Icon1, Icon2, Icon3, Icon4, Video, VideoIcon, LoveDesign, Bedroom1, Bedroom2, Bedroom3, Bedroom4, Bedroom5, Bedroom6, Bedroom7, SingleProjectImg, image9, image10, image11, LatestBlog, SingleBlogImg1, SingleBlogImg2, SingleTeamImg, Location, FAQImg1, FAQImg2, ErrorImg}
 
