@@ -61,7 +61,7 @@ export default function Navbar() {
                         <div onClick={()=>{
                             setOpen(!open)
                             router.push(item.link)
-                        }} className='text-[16px] font-jost hover:text-primary text-secondary'  key={idx}>{item.title}</div>
+                        }} className='text-[16px] font-jost hover:text-primary text-secondary cursor-pointer'  key={idx}>{item.title}</div>
                     ))
                 }
             </div>}
